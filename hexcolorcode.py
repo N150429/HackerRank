@@ -1,3 +1,4 @@
+#finding the hexcolor code in the css file with length of 3 and 6 example #FFF, #ABCF01
 import re
 for index in range(int(input())):
     string = input()
