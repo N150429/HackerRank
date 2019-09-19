@@ -1,0 +1,30 @@
+import cmath
+p=complex(input().strip())
+print(p)
+p1=cmath.polar(p)
+print(p1[0])
+print(p1[1])
+
+
+#without cmath
+print("without using cmath module")
+import math
+p=input()
+print(p)
+print(p[0])
+r=math.sqrt(pow(int(p[0]),2)+(pow(int(p[2]),2)))
+print(r)
+print(math.atan(int(p[2])/int(p[0])))
+
+'''
+output:
+1+2j
+(1+2j)
+2.23606797749979
+1.1071487177940904
+without using cmath module
+1+2j
+1+2j
+1
+2.23606797749979
+1.1071487177940904'''
