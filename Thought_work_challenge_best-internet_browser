@@ -1,0 +1,20 @@
+n=int(input())
+vowels=['a','e','i','o','u']
+for _ in range(n):
+    website = input()
+    length = len(website)
+    web = website.split('.')
+    name = web[1]
+    c=0
+    for k in name:
+        if k in vowels:
+            c=c+1
+    print("{}/{}".format(length-c-4,length))
+
+
+output:
+2
+www.google.com
+www.hackerearth.com
+7/14
+11/19
