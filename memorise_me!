@@ -1,0 +1,43 @@
+'''INPUT And OUTPUT
+
+The first line of input will contain N, an integer, which is the total number of numbers shown to your team.
+
+The second line of input contains N space separated integers .
+
+The third line of input contains an integer Q , denoting the total number of integers.
+
+The Next Q lines will contain an integer denoting an integer, Bi , for which you have to print the number of occurrences of that number (Bi) in those N numbers on a new line.
+
+If the number Bi  isn’t present then Print “NOT PRESENT” (without quotes) on a new line.
+'''
+from collections import Counter
+n=int(input())
+arr = list(map(int,input().split()))
+nq=int(input())
+cl=Counter(arr)
+print(type(cl))
+print(cl)
+for i in range(nq):
+    e=int(input())
+    if e in cl:
+        print(cl[e])
+    else:
+        print("NOT PRESENT")
+
+
+output:
+6
+1 1 1 2 2 0
+6
+1
+2
+1
+0
+3
+4
+Counter({1: 3, 2: 2, 0: 1})
+3
+2
+3
+1
+NOT PRESENT
